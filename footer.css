@@ -1,20 +1,94 @@
 footer {
     background-color: var(--color-primary-2);
+    font-size: 0.5rem;
 }
 
 #footer_items {
     display: flex;
     justify-content: space-between;
     padding: 0px 8% 24px 8%;
-    align-items: center;
+    align-items: auto;
+    font-size: 0.5rem;
+    flex-direction: column;
 }
 
 #copyright {
     color: var(--color-neutral-1);;
-    font-weight: 500;
+    font-weight: 250;
 }
 
-@media screen and (max-width: 600px) {
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 1rem;
+}
+
+.footer .box-container .box .links {
+    font-size: 1.0rem;
+    display: block;
+    color: #aaa;
+    padding: 1rem 3rem;
+}
+
+.footer .box-container .box .links:hover {
+    color: rgba(7, 88, 141, 0.979);
+}
+
+.footer .box-container .box p {
+    font-size: 1.3rem;
+    align-items: center;
+    color: #aaa;
+    padding: 0.5rem 1rem;
+}
+
+.footer .box-container .box p i {
+    padding-right: 1.3rem;
+    align-items: center;
+    color: rgba(7, 88, 141, 0.979);
+}
+
+.footer .box-container .box .share {
+    padding: 1rem 3rem;
+}
+
+.footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
+    color: #fff;
+    background: #0f679687;
+    border-radius: 50%;
+    margin-right: .5rem;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+    background: rgba(7, 88, 141, 0.979);
+}
+
+.footer .box-container .box form {
+    margin-left: 2rem;
+}
+
+.footer .box-container .box form .email {
+    margin-bottom: 1rem;
+    width: 90%;
+    background: #0f679687;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: none;
+}
+
+
+@media screen and (max-width: 400px) {
     #footer_items {
         flex-direction: column;
         gap: 20px;
