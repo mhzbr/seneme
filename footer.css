@@ -32,7 +32,7 @@ footer {
 .footer .box-container .box .links {
     font-size: 1.0rem;
     display: block;
-    color: #aaa;
+    color: #000000;
     padding: 1rem 3rem;
 }
 
@@ -58,14 +58,14 @@ footer {
 .footer .box-container .box p {
     font-size: 1.3rem;
     align-items: center;
-    color: #aaa;
+    color: #000000;
     padding: 0.5rem 1rem;
 }
 
 .footer .box-container .box p i {
     padding-right: 1.3rem;
     align-items: center;
-    color: rgba(7, 88, 141, 0.979);
+    color: rgb(7, 87, 141);
 }
 
 .footer .box-container .box .share {
@@ -77,8 +77,8 @@ footer {
     width: 4rem;
     line-height: 4rem;
     font-size: 1.3rem;
-    color: #fff;
-    background: #0f679687;
+    color: #ffffff;
+    background: #0f6796e1;
     border-radius: 50%;
     margin-right: .5rem;
     text-align: center;
