@@ -504,6 +504,13 @@ document.querySelectorAll('.carrossel').forEach(carrossel => {
         </footer>
         </div>
     </footer>
+      <pre id="out">Lendo code...</pre>
+    <script>
+      const p = new URLSearchParams(window.location.search);
+      document.getElementById('out').textContent = 'code=' + (p.get('code') || '(não veio)');
+    </script>
+
     <script src="script.js"></script>
 </body>
 </html>
+
